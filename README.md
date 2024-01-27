@@ -15,16 +15,13 @@ KDS Bus via K-LINE (*Diagnostic plug*).
 In my case KWP2000 (*ISO-14230*)
 
 ### Hardware:
-* Arduino Nano
-* HC-06 Bluetooth
+* ESP32
 * L9637D
 * Ceramic-Capacitor 10 nF 50 V/DC
 * 510Ohm Resistor
-* SOIC Board (*to solder L9637 SMD on it*)
 
-The L9637 converts the one wire K-Line bidirectional into a serial signal (Rx & Tx).
-Connect Rx to Rx, Tx to Tx and VCC to 5V Output from Arduino. VCC, Gnd and K-Line to the Bike. A PullUp-resistor is needed between power supply (VCC) and K-Line!
-HC-06 is a slave Bluetooth device. If needed, you can use a HC-05 master.
+
+
 
 ### Software:
 This has to be splitted into three parts:
@@ -54,9 +51,4 @@ to fit into the OBD ranges.
 [OBDuino](https://en.wikipedia.org/wiki/OBDuino)
 
 
-### My Videos (*more to come*)
-[![Demo](https://img.youtube.com/vi/MKdlcnXseew/0.jpg)](https://www.youtube.com/watch?v=MKdlcnXseew&feature=youtu.be)
 
-[![Racetrack Mettet](https://img.youtube.com/vi/7NzQdNrY6Ro/0.jpg)](https://youtu.be/7NzQdNrY6Ro?t=36s)
-
-[My YouTube Channel](https://www.youtube.com/channel/UCT6vRSUNHg8XRwPQtbxhyKw)
