@@ -7,11 +7,8 @@ action cameras like "Garmin Virb X / XE" or other solutions, which are able to c
 For racetrack usage, I can recommend [Racechrono](https://racechrono.com/)
 
 ### Repository
-* [ECU Emulation](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/ECU%20Emulation) - Visual Studio C# Project to emulate the ECU
-* [Bike_Diagnostic_System](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/Bike_Diagnostic_System)    - Arduino Sketch -> Full solution (new)
-* [ECU_Reader](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/ECU_Reader)    - Arduino Sketch -> Full solution (old)
-* [HC06_Sniffer](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/HC06_Sniffer)  - Arduino Sketch to find out Bluetooth AT-commands
-* [Documentation](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/Documentation) - OBD / KDS PID-List, Schematics, ect.
+* [Bike_Diagnostic_System](https://github.com/SaLuci/KDS2Bluetooth/tree/master/Bike_Diagnostic_System)    - Arduino Sketch -> Full solution (new)
+
 
 ### Protocol:
 KDS Bus via K-LINE (*Diagnostic plug*).
