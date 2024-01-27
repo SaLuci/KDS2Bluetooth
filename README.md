@@ -50,5 +50,7 @@ to fit into the OBD ranges.
 
 [OBDuino](https://en.wikipedia.org/wiki/OBDuino)
 
+[Original KDS2Bluetooth](https://github.com/HerrRiebmann/KDS2Bluetooth) (by [TriB](https://github.com/HerrRiebmann))
+
 
 
