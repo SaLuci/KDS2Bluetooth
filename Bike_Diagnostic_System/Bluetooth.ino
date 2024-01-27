@@ -53,9 +53,7 @@ bool BtDataAvailable() {
 }
 
 bool CheckBtModule() {  
-  baud = BT_Baud;
-  BT.begin(baud);
-  //Still necessary?!
+  BT.begin(BT_Name);
   return true;
   
   delay(100);
@@ -91,7 +89,7 @@ bool FindBtModule() {
     btVersion = 0xff;
     baud = BT_BaudFallback;
     //Try  with default value
-    BT.begin(baud);    
+    BT.begin(BT_Name);    
     SetError(ERROR_BT_BaudNotFound);
     return false;
   }
@@ -110,11 +108,11 @@ bool FindBtModule() {
       //Stay with found baud or default value
       if (baud == 0L)
         baud = BT_BaudFallback;        
-      BT.begin(baud);      
+      BT.begin(BT_Name);      
       return false;
     }
   baud = BT_Baud;
-  BT.begin(baud);
+  BT.begin(BT_Name);
   return true;
 }
 
@@ -325,5 +323,5 @@ void BtEnd(){
 }
 void BtResume(){
   if(baud != 0)
-    BT.begin(baud);
+    BT.begin(BT_Name);
 }
