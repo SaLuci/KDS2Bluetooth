@@ -1,14 +1,10 @@
 # KDS2Bluetooth
-Kawasaki Diagnostic Service Reader via Bluetooth
+Kawasaki/Suzuki Diagnostic Service Reader via Bluetooth
 
-Using an Arduino (*Nano*) to read parameter from a Kawasaki motorcycle by it´s diagnostic system.
+Using an ESP32 to read parameter from a Kawasaki/Suzuki motorcycle by it´s diagnostic system.
 Requests can be submittet via bluetooth, by any ELM327 compatible device/application. Such as Android App [Torque Lite](https://play.google.com/store/apps/details?id=org.prowl.torque&hl=de), [Car Scanner ELM OBD2](https://play.google.com/store/apps/details?id=com.ovz.carscanner&hl=de), 
 action cameras like "Garmin Virb X / XE" or other solutions, which are able to communicate with an OBD II Bluetooth Adapter.
 For racetrack usage, I can recommend [Racechrono](https://racechrono.com/)
-
-# Update 2023/01/01
-My latest so called "Bike Diagnostic System" version for Kawasaki & Suzuki. It´s almost compatible to any ELM327 App and supports nearly any KDS and SDS bike.
-It has tons of settings, parameter, modes and an error log.
 
 ### Repository
 * [ECU Emulation](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/ECU%20Emulation) - Visual Studio C# Project to emulate the ECU
@@ -16,15 +12,6 @@ It has tons of settings, parameter, modes and an error log.
 * [ECU_Reader](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/ECU_Reader)    - Arduino Sketch -> Full solution (old)
 * [HC06_Sniffer](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/HC06_Sniffer)  - Arduino Sketch to find out Bluetooth AT-commands
 * [Documentation](https://github.com/HerrRiebmann/KDS2Bluetooth/tree/master/Documentation) - OBD / KDS PID-List, Schematics, ect.
-
-### History:
-Against all cars and trucks, the diagnostic interface is not standardized on two wheels.
-Neither the plug, nor the communication.
-Since ~1996 ODB and later on OBD II interface entered nearly every car. The motorbike manufactures are cooking their very own soup.
-
-That´s why I cannot use a cheap (*china*) OBD II to Bluetooth adapter, to transfer RPM, Speed, Temperatures, Throttle, ect.
-to my Garmin Virb XE action cam.
-Also my bike doesn´t have any gear indicator. So I´d like to build my very own.
 
 ### Protocol:
 KDS Bus via K-LINE (*Diagnostic plug*).
@@ -69,9 +56,6 @@ to fit into the OBD ranges.
 
 [OBDuino](https://en.wikipedia.org/wiki/OBDuino)
 
-### My Cameras:
-[Garmin Virb XE](http://virb.garmin.com/en-US/virb-xe)
-[Garmin Virb X](http://virb.garmin.com/en-US/virb-x)
 
 ### My Videos (*more to come*)
 [![Demo](https://img.youtube.com/vi/MKdlcnXseew/0.jpg)](https://www.youtube.com/watch?v=MKdlcnXseew&feature=youtu.be)
