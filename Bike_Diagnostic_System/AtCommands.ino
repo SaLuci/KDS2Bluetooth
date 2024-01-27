@@ -205,12 +205,6 @@ struct CmdResult RespondAtCommand() {
     return CmdResult(true, true);
   }
 
-  //Device Voltage:
-  if (Compare("ATRV")) {
-    PrintInternalVoltage();
-    return CmdResult(false, true);
-  }
-
   //Spaces (0, 1):
   if (Compare("ATSb")) {
     spaces = btBuffer[3] == '1';
@@ -497,11 +491,11 @@ struct CmdResult RespondXtCommand() {
     return CmdResult(false, true);
   }
 
-  //Free RAM: ~884
-  if (Compare("XTR")) {
-    PrintFreeRam();
-    return CmdResult(false, true);
-  }
+  // Free RAM: ~884
+  //if (Compare("XTR")) {
+  //  PrintFreeRam();
+  //  return CmdResult(false, true);
+  //}
   //Raw Mode
   if (Compare("XTRb")) {
     rawMode = btBuffer[3] == '1';

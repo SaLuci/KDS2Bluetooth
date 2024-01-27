@@ -87,26 +87,3 @@ uint8_t CalcGearToEngineLoad(uint8_t gear) {
   return map(gear, 0, 6, 0, 15);  // Value / 2,55 (15/2,55 == 5,9)
 }
 
-long readVcc() {
-  long result; // Read 1.1V reference against AVcc 
-  ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
-  delay(2); // Wait for Vref to settle 
-  ADCSRA |= _BV(ADSC);  // Convert 
-  while (bit_is_set(ADCSRA,ADSC)); //mesure
-  result = ADCL;
-  result |= ADCH<<8;
-  result = 1126400L / result; // Back-calculate AVcc in mV
-  return result;
-}
-
-long readTemp() {
-  long result; // Read temperature sensor against 1.1V reference 
-  ADMUX = _BV(REFS1) | _BV(REFS0) | _BV(MUX3);
-  delay(2); // Wait for Vref to settle 
-  ADCSRA |= _BV(ADSC); // Convert 
-  while (bit_is_set(ADCSRA,ADSC)); //mesure
-  result = ADCL;
-  result |= ADCH<<8;
-  result = (result - 125) * 1075;
-  return result;
-}

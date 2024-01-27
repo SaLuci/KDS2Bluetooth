@@ -12,8 +12,7 @@ void PrintAll() {
   BtPrintln();
   PrintThrottleValues();
   //PrintErrorMessages();
-  PrintInternalVoltage();
-  PrintInternalTemp();
+
 }
 
 void PrintAtSetup() {
@@ -182,32 +181,22 @@ void PrintKeepalive() {
   BT.println(); 
 }
 
-void PrintFreeRam() {
-  BT.print(F("RAM: "));
-  BT.println(freeRam());
-}
+//void PrintFreeRam() {
+//  BT.print(F("RAM: "));
+//  BT.println(freeRam());
+//}
 
-int freeRam () {
-  extern int __heap_start, *__brkval;
-  int v;
-  return (int) &v - (__brkval == 0 ? (int) &__heap_start : (int) __brkval);
-}
+//int freeRam () {
+//  extern int __heap_start, *__brkval;
+//  int v;
+//  return (int) &v - (__brkval == 0 ? (int) &__heap_start : (int) __brkval);
+//}
 
 void PrintVersions(){
   BT.print(F("Board: "));
   BT.println(BoardVersion);
   BT.print(F("FW: "));
   BT.println(FWVersion);
-}
-
-void PrintInternalVoltage(){
-  PrintLongInDec(readVcc());  
-  BtPrintln("V");
-}
-
-void PrintInternalTemp(){
-  PrintLongInDec(readTemp());  
-  BtPrintln("C");
 }
 
 void PrintLongInDec(long value){

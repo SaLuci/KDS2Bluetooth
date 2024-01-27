@@ -175,5 +175,5 @@ bool EepromReadBool(uint8_t address, bool defaultValue) {
 }
 
 void EepromUpdate(uint8_t address, uint8_t value) {
-  EEPROM.update(address + eepromOffset, value);
+  EEPROM.write(address + eepromOffset, value);
 }
