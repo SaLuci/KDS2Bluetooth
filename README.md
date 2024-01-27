@@ -42,6 +42,8 @@ to fit into the OBD ranges.
 
 
 ### The most influential Tutorials/sources:
+[Original KDS2Bluetooth](https://github.com/HerrRiebmann/KDS2Bluetooth) (by [TriB](https://github.com/HerrRiebmann))
+
 [KDS Protocol](https://web.archive.org/web/20201202041417/https://ecuhacking.activeboard.com/t56234221/kds-protocol/) (inactive ecuhacking.activeboard via archive.org)
 
 [Kawaduino](https://github.com/tomnz/kawaduino)
@@ -50,7 +52,7 @@ to fit into the OBD ranges.
 
 [OBDuino](https://en.wikipedia.org/wiki/OBDuino)
 
-[Original KDS2Bluetooth](https://github.com/HerrRiebmann/KDS2Bluetooth) (by [TriB](https://github.com/HerrRiebmann))
+
 
 
 
