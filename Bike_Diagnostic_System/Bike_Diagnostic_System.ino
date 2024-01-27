@@ -75,6 +75,7 @@ const float BoardVersion = 1.00;
 #define ERROR_K_Buffer_Exeeded 25
 
 //_**  Bluetooth Interface   **_//
+#define BT_Name "KLine2OBD"
 #define BT_Timeout 500 // 0,5 second timeout on Wireless commands
 #define BT_Delay 3     // 3 ms delay between reads if nothing available
 #define BT_Baud 57600
