@@ -41,22 +41,6 @@ See the possible commands and a screenshot at the [End](#xt-commands---custom-se
 |AT	|WS		|WarmStart	|ELM Version	|ResetToDefault
 |AT	|Z		|Reset/Restart	|ELM Version + OK	|ResetToDefault
 
-## BT Commands - Bluetooth
-Regular HC-05 / 06 commands, which will be changed from "BT" to "AT" internally.
-Without having a seperate connection to access the AT-Mode, you just need to disconnect. The code will wait some seconds until you are disconnected and execute the command then. The result is temporarily stored and when you reconnect (after about ~5 seconds) you will get the reply.
-| Type  | Command | Description 
-| ------------- | ------------- | ------------- 
-|BT	|+ADDR		|Default Adress		
-|BT	|+BAUD	4,6,7,8	|SetBaudrate		
-|BT	|+NAME		|See/Set Name		
-|BT	|+ORGL		|Restore factory settings		
-|BT	|+PSWD		|See/Set Password		
-|BT	|+RESET		|Restart		
-|BT	|+ROLE		|Master/slave		
-|BT	|+UART		|Baudrate		
-|BT	|+VERSION		|Version		
-|BT	|		|Connection Check
-
 ## XT Commands - Custom setup/functions
 | Type  | Command | Description | Answer | Function
 | ------------- | ------------- | ------------- | ------------- | ------------- |
